@@ -109,12 +109,60 @@
     font-weight: 600;
 }
 
-.mainscreen__article__feed__img {
-    display:flex;
+.mainscreen__article__feed__img-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    min-height: 604px;
+    max-height: 743px;
+}
+
+.mainscreen__article__feed__img-container__img {
+    display:none;
     align-items: center;
     justify-content: center;
-    min-height: 604px;
-    max-height: 768px;
+}
+
+.mainscreen__article__feed__img-container :first-child {
+    display: flex;
+}
+
+.mainscreen__article__feed__img-container__prev, 
+.mainscreen__article__feed__img-container__next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+.mainscreen__article__feed__img-container__next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.mainscreen__article__feed__img-container__prev:hover, 
+.mainscreen__article__feed__img-container__next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
 .mainscreen__article__feed__icons {
@@ -123,7 +171,34 @@
     align-items: center;
     height: 56px;
     font-size: 23px;
-    margin-top: 4px;
+    /* margin-top: 4px; */
+}
+
+.mainscreen__article__feed__icons__center {
+    width: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items:center;
+}
+
+.mainscreen__article__feed__icons__center :first-child {
+    background-color: blue;
+}
+
+.dot {
+    cursor: pointer;
+    height: 5px;
+    width: 5px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+    text-align: center;
+}
+
+.active, .dot:hover {
+    background-color: blue;
 }
 
 .mainscreen__article__feed__icons__left > i {

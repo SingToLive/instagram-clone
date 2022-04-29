@@ -2,6 +2,11 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="../script/style.css" />
+    <script
+      type="text/javascript"
+      ,
+      src="../script/mainscreen.js?ver=123"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -120,15 +125,42 @@
             </div>
             <i class="fa-solid fa-ellipsis"></i>
           </div>
-          <div class="mainscreen__article__feed__img">
-            <img src="../script/img/sadio.jpg" />
+          <!-- 수정중인 부분 -->
+          <div class="mainscreen__article__feed__img-container">
+            <div class="mainscreen__article__feed__img-container__img img-fade">
+              <img src="../script/img/sadio.jpg" />
+            </div>
+            <div class="mainscreen__article__feed__img-container__img img-fade">
+              <img src="../script/img/mane.jpeg" />
+            </div>
+            <div class="mainscreen__article__feed__img-container__img img-fade">
+              <img src="../script/img/sm.jpg" />
+            </div>
+            <a
+              class="mainscreen__article__feed__img-container__prev"
+              onclick="plusSlides(-1)"
+              >&#10094;</a
+            >
+            <a
+              class="mainscreen__article__feed__img-container__next"
+              onclick="plusSlides(1)"
+              >&#10095;</a
+            >
           </div>
+          <!-- 수정중인 부분 -->
           <div class="mainscreen__article__feed__icons">
             <div class="mainscreen__article__feed__icons__left">
               <i class="fa-solid fa-heart"></i>
               <i class="fa-solid fa-comment"></i>
               <i class="fa-solid fa-paper-plane"></i>
             </div>
+            <!-- 수정 -->
+            <div class="mainscreen__article__feed__icons__center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            <!-- 수정 -->
             <div class="mainscreen__article__feed__icons__right">
               <i class="fa-solid fa-bookmark"></i>
             </div>
