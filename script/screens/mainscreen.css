@@ -125,9 +125,9 @@
     justify-content: center;
 }
 
-.mainscreen__article__feed__img-container :first-child {
+/* .mainscreen__article__feed__img-container :first-child {
     display: flex;
-}
+} */
 
 .mainscreen__article__feed__img-container__prev, 
 .mainscreen__article__feed__img-container__next {
@@ -182,9 +182,9 @@
     align-items:center;
 }
 
-.mainscreen__article__feed__icons__center :first-child {
+/* .mainscreen__article__feed__icons__center :first-child {
     background-color: blue;
-}
+} */
 
 .dot {
     cursor: pointer;

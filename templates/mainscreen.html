@@ -2,11 +2,6 @@
 <html lang="en">
   <head>
     <link rel="stylesheet" href="../script/style.css" />
-    <script
-      type="text/javascript"
-      ,
-      src="../script/mainscreen.js?ver=123"
-    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -125,7 +120,6 @@
             </div>
             <i class="fa-solid fa-ellipsis"></i>
           </div>
-          <!-- 수정중인 부분 -->
           <div class="mainscreen__article__feed__img-container">
             <div class="mainscreen__article__feed__img-container__img img-fade">
               <img src="../script/img/sadio.jpg" />
@@ -147,20 +141,66 @@
               >&#10095;</a
             >
           </div>
-          <!-- 수정중인 부분 -->
           <div class="mainscreen__article__feed__icons">
             <div class="mainscreen__article__feed__icons__left">
               <i class="fa-solid fa-heart"></i>
               <i class="fa-solid fa-comment"></i>
               <i class="fa-solid fa-paper-plane"></i>
             </div>
-            <!-- 수정 -->
             <div class="mainscreen__article__feed__icons__center">
               <span class="dot" onclick="currentSlide(1)"></span>
               <span class="dot" onclick="currentSlide(2)"></span>
               <span class="dot" onclick="currentSlide(3)"></span>
             </div>
-            <!-- 수정 -->
+            <div class="mainscreen__article__feed__icons__right">
+              <i class="fa-solid fa-bookmark"></i>
+            </div>
+          </div>
+          <div class="mainscreen__article__feed__likes-txt">
+            좋아요 145,562개
+          </div>
+          <div class="mainscreen__article__feed__comments">
+            <div class="mainscreen__article__feed__comments__main-comment">
+              <span>liverpoolfc</span>
+              <span>
+                That's now 2⃣0⃣ goals in four of the last five seasons for super
+                Sadio 🤩 #LFC
+              </span>
+            </div>
+            <div class="mainscreen__article__feed__comments__show-all-comment">
+              <p>댓글 971개 모두 보기</p>
+            </div>
+            <div class="mainscreen__article__feed__comments__visitors-comment">
+              <span>rinss98</span>
+              <span>Love to see it 🔥🔥🤩🤩</span>
+            </div>
+          </div>
+          <div class="mainscreen__article__feed__uploaded-time">
+            <p>6시간전</p>
+          </div>
+          <div class="mainscreen__article__feed__write-comment">
+            <i class="fa-solid fa-face-smile"></i>
+            <input type="search" placeholder="댓글 달기..." />
+            <span>게시</span>
+          </div>
+        </div>
+        <div class="mainscreen__article__feed">
+          <div class="mainscreen__article__feed__header">
+            <div class="mainscreen__article__feed__header__img-p">
+              <img src="../script/img/liverpoolfc-logo.png" />
+              <p>liverpoolfc</p>
+            </div>
+            <i class="fa-solid fa-ellipsis"></i>
+          </div>
+          <div class="mainscreen__article__feed__img">
+            <img src="../script/img/sadio.jpg" />
+          </div>
+          <div class="mainscreen__article__feed__icons">
+            <div class="mainscreen__article__feed__icons__left">
+              <i class="fa-solid fa-heart"></i>
+              <i class="fa-solid fa-comment"></i>
+              <i class="fa-solid fa-paper-plane"></i>
+            </div>
             <div class="mainscreen__article__feed__icons__right">
               <i class="fa-solid fa-bookmark"></i>
             </div>
@@ -269,5 +309,19 @@
         </div>
       </div>
     </div>
+
+    <!-- 모달 -->
+    <!-- <div class="mainscreen__article__feed__modal" id="ee">
+      <div class="mainscreen__article__feed__modal__center">
+        <div class="mainscreen__article__feed__modal__img-container"></div>
+        <div class="mainscreen__article__feed__modal__info"></div>
+      </div>
+    </div> -->
+    <!-- 모달 -->
   </body>
+  <script
+    type="text/javascript"
+    ,
+    src="../script/mainscreen.js?ver=123"
+  ></script>
 </html>

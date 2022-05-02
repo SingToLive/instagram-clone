@@ -1,0 +1,29 @@
+.mainscreen__article__feed__modal {
+    background-color: rgb(0,0,0,0.3);
+    position: fixed; 
+    top: -50%; 
+    left: -50%;
+    min-width: 200%;
+    min-height: 200%;
+    z-index: 99999;
+    overflow: hidden;
+}
+
+.mainscreen__article__feed__modal__center   {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin: auto; 
+    max-height: 48%;
+    max-width: 40%;
+    background-color: brown;
+  }
+
+.mainscreen__article__feed__modal__info {
+    background-color: blue;
+    position: absolute; 
+    width: 100px;
+    height: 100px;
+}

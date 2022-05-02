@@ -26,6 +26,5 @@ function showSlides(n) {
 }
 
 let slideIndex = 1;
-let a = showSlides()
-a(1);
+showSlides(slideIndex);
 
